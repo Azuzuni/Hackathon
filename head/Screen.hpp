@@ -22,7 +22,7 @@ namespace hackathon
 			return temp;
 		}
 	protected:
-		inline ChangeRequest requestScreenChange(std::string request)
+		inline void requestScreenChange(std::string request)
 		{
 			m_request.requestReviewed = false;
 			m_request.requestedScreen = request;
