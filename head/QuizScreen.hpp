@@ -1,15 +1,20 @@
 #pragma once
 #include "Screen.hpp"
 #include <iostream>
+#include "WczytywanieDanych.hpp"
+#include <vector>
 
 namespace hackathon
 {
 	class QuizScreen : public Screen
 	{
 		public:
-			QuizScreen(raylib::Window& window) :
+			QuizScreen(raylib::Window& window, const std::string& dataFile) :
 				Screen(window), 
-				m_background(LoadTexture("../../../graphic/pytanie.jpg")){};
+				m_background(LoadTexture("../../../graphic/pytanie.jpg"))
+				{
+					m_questions = wczytajDane(dataFile);
+				};
 			
 			void compute() override {};
 			void display() override {
@@ -18,7 +23,8 @@ namespace hackathon
 			};
 		private:
 			Texture2D m_background;
-			int index;
+			int m_index{0};
+			std::vector<QuestionData> m_questions;
 			
 			
 		
