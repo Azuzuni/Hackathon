@@ -1,1 +1,25 @@
-
+Czy wyrazenie p->(q->p) jest tautologia czy formula spelnialna.
+Jest tautologia
+Jest spelnialna
+Nie jest spelnialna
+Nie da sie okreslic
+Wartosc logiczna zdania p∨(q∧r), gdy 𝑝=0,𝑞=1,𝑟=0.
+0
+1
+0,5
+3
+Czy wyrazenie (p∧q)∨~r jest tautologia czy formula spelnialna.
+Jest spelnialna
+Jest tautologia
+Nie jest spelnialna
+Jest kontrtautologia
+Czym jest tautologia?
+Wyrazenie zawsze prawdziwe
+Wyrazenie zawsze falszywe
+Wyrazenie spelnialne
+Wyrazenie z jedna mozliwa odpowiedzia
+Pierwsze prawo de Morgana brzmi:
+~(p∧q)<->~p∨~q
+(p∧q)<->~p∨~q
+~(p∧q)<->p∨q
+(p∧q)<->p∨q
