@@ -9,7 +9,7 @@ struct data {
 	std::string answers[3];
 };
 
-std::vector<data> hackathon::wczytajDane(const std::string& dataFile) {
+std::vector<data> hackathon::wczytajDane(const std::string &dataFile) {
 	int amount;
 	struct data dane;
 	std::ifstream file(dataFile);  
