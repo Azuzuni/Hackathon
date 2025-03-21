@@ -1,6 +1,5 @@
 #pragma once
 #include "Screen.hpp"
-#include "WczytywanieDanych.hpp"
 #include <iostream>
 
 namespace hackathon
@@ -10,7 +9,7 @@ namespace hackathon
 		public:
 			QuizScreen(raylib::Window& window) :
 				Screen(window), 
-				m_background(LoadTexture("../graphic/pytanie.jpg")){};
+				m_background(LoadTexture("../../../graphic/pytanie.jpg")){};
 			
 			void compute() override {};
 			void display() override {
