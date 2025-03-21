@@ -1,12 +1,15 @@
 #include "ScreenManager.hpp"
 #include "QuizScreen.hpp"
+#include "RoadmapScreen.hpp"
+#include "GlobalVariables.hpp"
 
 namespace hackathon
 {
 	ScreenManager::ScreenManager(raylib::Window& window) : m_window(window)
 	{
-		m_currentScreen = "Quiz";
+		m_currentScreen = SCREEN;
 		m_screens["Quiz"] = std::make_unique<QuizScreen>(window, "../../../questions/pytania.txt");
+		m_screens["Roadmap"] = std::make_unique<RoadmapScreen>(window);
 	}
 
 	void ScreenManager::compute()
