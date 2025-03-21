@@ -5,7 +5,7 @@
 namespace hackathon {
 	struct data {
 		std::string question;
-		std::string answers[3];
+		std::string answers[4];
 	};
 	std::vector<data> wczytajDane(const std::string &dataFile);
 }

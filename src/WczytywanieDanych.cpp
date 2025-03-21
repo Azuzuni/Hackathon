@@ -4,18 +4,16 @@
 #include <vector>
 #include <string>
 
-struct data {
-	std::string question;
-	std::string answers[3];
-};
 
-std::vector<data> hackathon::wczytajDane(const std::string &dataFile) {
-	int amount;
+std::vector<hackathon::data> hackathon::wczytajDane(const std::string &dataFile) {
+	int amount = 0;
 	struct data dane;
 	std::ifstream file(dataFile);  
-	file >> amount;
+	while (!file.eof()) {
+		amount++;
+	}
     std::vector<data> loadedData;
-    for (int i = 1; i <= amount; i++) {
+    for (int i = 0; i < amount; i++) {
 		data dane;
 		std::getline(file, dane.question);
 		std::getline(file, dane.answers[0]);
