@@ -1,1 +1,50 @@
-
+Oblicz granice lim(x->0) ln(x)
+-infinity
+0
+nie istnieje
++infinity
+Oblicz granice lim(x->1) x^3-1/x-1
+3
+2
+-5
+0
+Oblicz granice lim(x->0) 1-cos(x)/x^2.
+1/2
+1/4
+2/5
+4/7
+Oblicz granice lim(x->0)tan(x)/x.
+1
+0
+-1
+4
+Oblicz granice lim(x->infty)(1+1/x)^x.
+e
+e^-3
+e^2
+e^2/3
+Oblicz granice lim(x->-infty) 5x^3-2x+1/4x^3+3x^2-x.
+5/4
+4/5
+3/7
+4/9
+Oblicz granice ciagu an=3n^2+2n/n^2+1.
+3
+-2
+-3
+2
+Oblicz granice ciagu an=2^n/3^n.
+0
+-1/2
+3/4
+2
+Oblicz granice ciagu an=3^n/n!
+0
+-infinity
++infinity
+jest rozbiezny
+Oblicz granice ciagu an=(-1)^n/n.
+0
+-1
+1
+jest rozbiezny
