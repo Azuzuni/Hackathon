@@ -5,27 +5,27 @@
 #include <string>
 
 
-std::vector<hackathon::data> hackathon::wczytajDane(const std::string &dataFile) {
+std::vector<hackathon::QuestionData> hackathon::wczytajDane(const std::string &QuestionDataFile) {
 	int amount = 0;
-	struct data dane;
-	std::ifstream file(dataFile);  
+	struct QuestionData dane;
+	std::ifstream file(QuestionDataFile);  
 	std::string line;
 	while (std::getline(file, line)) {
 		amount++;
 	}
 	file.clear();   
 	file.seekg(0);
-    std::vector<data> loadedData;
+    std::vector<QuestionData> loadedQuestionData;
     for (int i = 0; i < amount; i++) {
-		data dane;
+		QuestionData dane;
 		std::getline(file, dane.question);
 		std::getline(file, dane.answers[0]);
 		std::getline(file, dane.answers[1]);
 		std::getline(file, dane.answers[2]);
 		std::getline(file, dane.answers[3]);
 
-        loadedData.push_back(dane); 
+        loadedQuestionData.push_back(dane); 
     }
-	return loadedData;
+	return loadedQuestionData;
 	
 }

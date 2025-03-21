@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.m": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iosfwd": "cpp"
     }
 }
