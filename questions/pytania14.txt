@@ -1,1 +1,25 @@
-
+2 prawo de Morgana brzmi:
+~(p∨q)<->~p∧~q
+(p∨q)<->p∧q
+~(p∨q)<->p∧q
+(p∨q)<->~p∧~q
+Oblicz sin(90∘)*cos(45∘)
+(2^(1/2))/2
+1/2
+-(1/2)
+2/3
+Podaj wartosc sin(225∘)
+(2^(1/2))/2
+1/2
+-(1/2)
+2/3
+Rozwiaz cos(2x)=1/2
+30∘+2k*pi i 150∘+2k*pi
+45∘+2k*pi i 90∘+2k*pi
+30∘+2k*pi
+60∘+2k*pi i 150∘+2k*pi
+Rozwiaz tg(x)=1
+pi/4+k*pi
+pi/2+2k*pi
+pi/3+2k*pi
+pi/4+2k*pi
