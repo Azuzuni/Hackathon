@@ -3,6 +3,7 @@
 #include "raylib/raylib.hpp"
 #include "Screen.hpp"
 #include "Marker.hpp"
+#include <iostream>
 
 namespace hackathon
 {
@@ -22,7 +23,7 @@ namespace hackathon
 		void display() override
 		{
 			DrawTexture(m_background, 0, 0, WHITE);
-			CreateMarker(130,600,m_marker,"1");
+			CreateMarker(130,600,m_marker,"1",[](){std::cout << "click\n";});
 		}
 	private:
 		Texture2D m_marker;
