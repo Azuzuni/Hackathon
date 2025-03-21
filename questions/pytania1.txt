@@ -14,37 +14,16 @@ Ile wynosi suma katow w trojkacie?
 90°
 270°
 Co to jest liczba pierwsza?
-Liczba, ktora jest podzielna tylko przez 1 i przez siebie
-Liczba, ktora jest podzielna przez 2
-Liczba, ktora jest podzielna przez 3
-Liczba, ktora nie ma dzielnikow
+Jst podzielna tylko przez 1 i przez siebie
+Jest podzielna przez 2
+Jest podzielna przez 3
+Nie ma dzielnikow
 Co to jest pierwiastek kwadratowy z liczby 16?
 4
 8
 2
 16
-Jak obliczyc pole prostokata?
-dlugosc × szerokosc
-dlugosc + szerokosc
-2 × dlugosc + 2 × szerokosc
-dlugosc ÷ szerokosc
-Jaki jest wynik 9 ÷ 3?
-3
-6
-2
-4
-Co oznacza symbol ∑ w matematyce?
-Suma
-Iloczyn
-Roznica
-Potega
-Jak nazywa się figura o 4 rownych bokach i 4 rownych katach?
-Kwadrat
-Prostokat
-Romb
-Trapez
-Ile wynosi wartosc liczby π (pi) do dwoch miejsc po przecinku?
-3,14
+
 3,00
 2,72
 3,41
