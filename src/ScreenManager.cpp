@@ -5,8 +5,8 @@ namespace hackathon
 {
 	ScreenManager::ScreenManager(raylib::Window& window) : m_window(window)
 	{
-		m_currentScreen = "main";
-		m_screens["main"] = std::make_unique<QuizScreen>(window);
+		m_currentScreen = "Quiz";
+		m_screens["Quiz"] = std::make_unique<QuizScreen>(window, "../../../questions/pytania.txt");
 	}
 
 	void ScreenManager::compute()
