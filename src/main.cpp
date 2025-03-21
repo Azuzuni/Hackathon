@@ -1,8 +1,8 @@
 #include "raylib/raylib-cpp.hpp"
 
 int main() {
-    int screenWidth = 800;
-    int screenHeight = 450;
+    int screenWidth = 1800;
+    int screenHeight = 950;
 
     raylib::Window window(screenWidth, screenHeight, "raylib-cpp - basic window");
     // raylib::Texture logo("raylib_logo.png");
