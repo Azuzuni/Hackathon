@@ -4,9 +4,7 @@
 
 namespace hackathon
 {
-	Screen::Screen() {}
+	void Screen::compute() {}
 
-	void Screen::compute(raylib::Window& window) {}
-
-	void Screen::display(raylib::Window& window) {}
+	void Screen::display() {}
 }

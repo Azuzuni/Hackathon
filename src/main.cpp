@@ -1,4 +1,5 @@
 #include "raylib/raylib-cpp.hpp"
+#include "QuizScreen.hpp"
 
 int main() {
     int screenWidth = 1800;

@@ -5,9 +5,10 @@ namespace hackathon
 	class Screen
 	{
 	public:
-		Screen();
-		virtual void compute(raylib::Window& window);
-		virtual void display(raylib::Window& window);
+		Screen(raylib::Window& window) : m_window(window){};
+		virtual void compute();
+		virtual void display();
 	protected:
+		raylib::Window& m_window;
 	};
 }
