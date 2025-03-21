@@ -4,6 +4,8 @@
 #include "WczytywanieDanych.hpp"
 #include <vector>
 #include "raylib/raylib-cpp.hpp"
+#include <string>
+#include "GlobalVariables.hpp"
 
 namespace hackathon
 {
@@ -21,8 +23,6 @@ namespace hackathon
 			void compute() override {};
 			void display() override {
 				DrawTexture(m_background,0,0,WHITE);
-				const int screenWidth = m_window.GetWidth();
-				const int screenHeight = m_window.GetHeight();
 
 				DrawButton(70,250, m_index,0);
 				DrawButton(950,250, m_index,1);
@@ -34,19 +34,23 @@ namespace hackathon
 			Texture2D m_buttonTexture;
 			int m_index = {0};
 			std::vector<QuestionData> m_questions;
+			int m_pathIndex = {1};
 			
 		private:
 			void DrawButton(const int x, const int y, const int questionIndex,const int answerIndex) {
 				Vector2 mousePosition = GetMousePosition();
-				Rectangle rec = {x,y,m_buttonTexture.width,m_buttonTexture.height};
+				float width = static_cast<float>(m_buttonTexture.width);
+				float height = static_cast<float>(m_buttonTexture.height);
+				Rectangle rec = {x,y,width,height};
 				bool isHovered = CheckCollisionPointRec(mousePosition,rec);
 				if(!isHovered) DrawTexture(m_buttonTexture,x,y,WHITE);
 				else {
 					DrawTexture(m_buttonTexture,x,y,GRAY);
 					if(IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) ++m_index;
 				}
+				if(m_index>=m_questions.size()/5) S_SCREEN = "Roadmap";
 				
-				DrawText(m_questions[questionIndex].answers[answerIndex].c_str(),x+(m_buttonTexture.width/10),y+(m_buttonTexture.height/3),30,BLACK);
+				DrawText(m_questions[questionIndex].answers[answerIndex].c_str(),x+(m_buttonTexture.width/10),y+(m_buttonTexture.height/3),S_fontSize,S_fontColor);
 
 			}			
 	};

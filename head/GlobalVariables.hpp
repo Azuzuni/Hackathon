@@ -3,5 +3,7 @@
 
 namespace hackathon
 {
-	static const std::string SCREEN = "Quiz";
+	static std::string S_SCREEN = "Roadmap";
+	static int S_fontSize = 25;
+	static Color S_fontColor = BLACK;
 }
