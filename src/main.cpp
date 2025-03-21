@@ -1,28 +1,26 @@
 #include "raylib/raylib-cpp.hpp"
-#include "QuizScreen.hpp"
+#include "ScreenManager.hpp"
 
 int main() {
     int screenWidth = 1800;
     int screenHeight = 950;
 
     raylib::Window window(screenWidth, screenHeight, "raylib-cpp - basic window");
-    // raylib::Texture logo("raylib_logo.png");
+    
+    hackathon::ScreenManager screen(window);
 
     SetTargetFPS(60);
-    hackathon::QuizScreen quiz(window);
+
     while (!window.ShouldClose())
     {
         BeginDrawing();
 
         window.ClearBackground(RAYWHITE);
 
-        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        screen.compute();
 
-        // Object methods.
-        // logo.Draw(
-        //     screenWidth / 2 - logo.GetWidth() / 2,
-        //     screenHeight / 2 - logo.GetHeight() / 2);
-        quiz.display();
+        screen.display();
+
         EndDrawing();
     }
 
