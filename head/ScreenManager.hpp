@@ -1,0 +1,9 @@
+
+
+namespace hackathon
+{
+	class ScreenManager
+	{
+
+	};
+}
