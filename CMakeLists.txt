@@ -22,7 +22,6 @@ endif()
 set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/main.cpp
     ${PROJECT_SOURCE_DIR}/src/WczytywanieDanych.cpp
-    ${PROJECT_SOURCE_DIR}/src/QuizScreen.cpp
     ${PROJECT_SOURCE_DIR}/src/Screen.cpp
     ${PROJECT_SOURCE_DIR}/src/ScreenManager.cpp
 

@@ -9,7 +9,7 @@ int main() {
     // raylib::Texture logo("raylib_logo.png");
 
     SetTargetFPS(60);
-
+    hackathon::QuizScreen quiz(window);
     while (!window.ShouldClose())
     {
         BeginDrawing();
@@ -22,7 +22,7 @@ int main() {
         // logo.Draw(
         //     screenWidth / 2 - logo.GetWidth() / 2,
         //     screenHeight / 2 - logo.GetHeight() / 2);
-
+        quiz.display();
         EndDrawing();
     }
 
