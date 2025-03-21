@@ -22,10 +22,17 @@ endif()
 set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/main.cpp
     ${PROJECT_SOURCE_DIR}/src/WczytywanieDanych.cpp
+    ${PROJECT_SOURCE_DIR}/src/QuizScreen.cpp
+    ${PROJECT_SOURCE_DIR}/src/Screen.cpp
+    ${PROJECT_SOURCE_DIR}/src/ScreenManager.cpp
+
 )
 
 set(HEADER_FILES
     ${PROJECT_SOURCE_DIR}/head/WczytywanieDanych.hpp
+    ${PROJECT_SOURCE_DIR}/head/QuizScreen.hpp
+    ${PROJECT_SOURCE_DIR}/head/Screen.hpp
+    ${PROJECT_SOURCE_DIR}/head/ScreenManager.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
