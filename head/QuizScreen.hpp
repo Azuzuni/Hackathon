@@ -3,6 +3,7 @@
 #include <iostream>
 #include "WczytywanieDanych.hpp"
 #include <vector>
+#include "raylib/raylib-cpp.hpp"
 
 namespace hackathon
 {
@@ -19,7 +20,6 @@ namespace hackathon
 			void compute() override {};
 			void display() override {
 				DrawTexture(m_background,0,0,WHITE);
-
 			};
 		private:
 			Texture2D m_background;
