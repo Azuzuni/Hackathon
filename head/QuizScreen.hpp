@@ -41,7 +41,7 @@ namespace hackathon
 				Vector2 mousePosition = GetMousePosition();
 				float width = static_cast<float>(m_buttonTexture.width);
 				float height = static_cast<float>(m_buttonTexture.height);
-				Rectangle rec = {x,y,width,height};
+				Rectangle rec = {x,y,{width},{height}};
 				bool isHovered = CheckCollisionPointRec(mousePosition,rec);
 				if(!isHovered) DrawTexture(m_buttonTexture,x,y,WHITE);
 				else {

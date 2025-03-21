@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.11)
 
 project(Hackathon)
+set(CMAKE_CXX_STANDARD 20)
 
 set(RAYLIB_VERSION 5.5)
 find_package(raylib ${RAYLIB_VERSION} QUIET)
