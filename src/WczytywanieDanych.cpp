@@ -26,4 +26,5 @@ void hackathon::wczytajDane(const std::string &dataFile) {
 
         loadedData.push_back(dane);  
     }
+	
 }
