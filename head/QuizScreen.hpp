@@ -48,7 +48,10 @@ namespace hackathon
 					DrawTexture(m_buttonTexture,x,y,GRAY);
 					if(IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) ++m_index;
 				}
-				if(m_index>=m_questions.size()/5) S_SCREEN = "Roadmap";
+				if(m_index>=m_questions.size()/5) {
+					m_index = {0};	
+					S_SCREEN = "Roadmap";
+				};
 				
 				DrawText(m_questions[questionIndex].answers[answerIndex].c_str(),x+(m_buttonTexture.width/10),y+(m_buttonTexture.height/3),S_fontSize,S_fontColor);
 

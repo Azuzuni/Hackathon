@@ -23,7 +23,7 @@ namespace hackathon
 		void display() override
 		{
 			DrawTexture(m_background, 0, 0, WHITE);
-			CreateMarker(130,600,m_marker,"1",[](){std::cout << "click\n";});
+			CreateMarker(130,600,m_marker,"1",[](){S_SCREEN = "Quiz1";});
 		}
 	private:
 		Texture2D m_marker;
