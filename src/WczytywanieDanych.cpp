@@ -9,7 +9,8 @@ std::vector<hackathon::data> hackathon::wczytajDane(const std::string &dataFile)
 	int amount = 0;
 	struct data dane;
 	std::ifstream file(dataFile);  
-	while (!file.eof()) {
+	std::string line;
+	while (std::getline(file, line)) {
 		amount++;
 	}
     std::vector<data> loadedData;
