@@ -13,6 +13,8 @@ std::vector<hackathon::data> hackathon::wczytajDane(const std::string &dataFile)
 	while (std::getline(file, line)) {
 		amount++;
 	}
+	file.clear();   
+	file.seekg(0);
     std::vector<data> loadedData;
     for (int i = 0; i < amount; i++) {
 		data dane;
