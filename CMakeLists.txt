@@ -21,10 +21,11 @@ endif()
 
 set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/main.cpp
+    ${PROJECT_SOURCE_DIR}/src/WczytywanieDanych.cpp
 )
 
 set(HEADER_FILES
-    ${PROJECT_SOURCE_DIR}/head/tesst.hpp
+    ${PROJECT_SOURCE_DIR}/head/WczytywanieDanych.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
