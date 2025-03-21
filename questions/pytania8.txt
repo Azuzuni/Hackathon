@@ -1,1 +1,26 @@
+Oblicz granice lim(x->-infty) 5x^3-2x+1/4x^3+3x^2-x.
+5/4
+4/5
+3/7
+4/9
+Oblicz granice ciagu an=3n^2+2n/n^2+1.
+3
+-2
+-3
+2
+Oblicz granice ciagu an=2^n/3^n.
+0
+-1/2
+3/4
+2
+Oblicz granice ciagu an=3^n/n!
+0
+-infinity
++infinity
+jest rozbiezny
+Oblicz granice ciagu an=(-1)^n/n.
+0
+-1
+1
+jest rozbiezny
 
