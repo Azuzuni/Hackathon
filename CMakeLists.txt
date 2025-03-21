@@ -34,6 +34,7 @@ set(HEADER_FILES
     ${PROJECT_SOURCE_DIR}/head/ScreenManager.hpp
     ${PROJECT_SOURCE_DIR}/head/SyllabusScreen.hpp
     ${PROJECT_SOURCE_DIR}/head/RoadmapScreen.hpp
+    ${PROJECT_SOURCE_DIR}/head/GlobalVariables.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
