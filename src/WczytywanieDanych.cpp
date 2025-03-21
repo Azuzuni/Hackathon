@@ -9,11 +9,10 @@ struct data {
 	std::string answers[3];
 };
 
-void hackathon::wczytajDane(const std::string &dataFile) {
+std::vector<data> hackathon::wczytajDane(const std::string &dataFile) {
 	int amount;
 	struct data dane;
-	std::ifstream file(dataFile);
-	//if (!data.is_open()) ;  
+	std::ifstream file(dataFile);  
 	file >> amount;
     std::vector<data> loadedData;
     for (int i = 1; i <= amount; i++) {
@@ -24,7 +23,8 @@ void hackathon::wczytajDane(const std::string &dataFile) {
 		std::getline(file, dane.answers[2]);
 		std::getline(file, dane.answers[3]);
 
-        loadedData.push_back(dane);  
+        loadedData.push_back(dane); 
     }
+	return loadedData;
 	
 }

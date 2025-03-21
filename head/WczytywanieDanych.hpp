@@ -7,5 +7,5 @@ namespace hackathon {
 		std::string question;
 		std::string answers[3];
 	};
-	void wczytajDane(const std::string &dataFile);
+	std::vector<data> wczytajDane(const std::string &dataFile);
 }
