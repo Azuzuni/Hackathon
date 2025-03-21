@@ -1,5 +1,6 @@
 #pragma once
 #include "raylib/raylib-cpp.hpp"
+#include <string>
 
 namespace hackathon
 {
@@ -27,7 +28,6 @@ namespace hackathon
 			m_request.requestReviewed = false;
 			m_request.requestedScreen = request;
 		}
-
 		ChangeRequest m_request;
 		raylib::Window& m_window;
 	};

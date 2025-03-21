@@ -11,7 +11,10 @@ namespace hackathon
 			Screen(window),
 			m_background(LoadTexture("../graphic/pytanie.jpg")) {};
 
-		void compute() override {};
+		void compute() override
+		{
+			requestScreenChange("Roadmap");
+		}
 		void display() override {
 			DrawTexture(m_background, 0, 0, WHITE);
 
