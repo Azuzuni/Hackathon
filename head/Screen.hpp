@@ -1,3 +1,4 @@
+#pragma once
 #include "raylib/raylib-cpp.hpp"
 
 namespace hackathon
