@@ -8,17 +8,17 @@ Jaki jest wynik 9 ÷ 3?
 6
 2
 4
-Co oznacza symbol ∑ w matematyce?
-Suma
-Iloczyn
-Roznica
-Potega
+Liczba e jest liczba:
+Eulera
+Eklera
+Emanuela
+Ekwadora
 Jak nazywa się figura o 4 rownych bokach i 4 rownych katach?
 Kwadrat
 Prostokat
 Romb
 Trapez
-Ile wynosi wartosc liczby π (pi) do dwoch miejsc po przecinku?
+Ile wynosi wartosc liczby pi do dwoch miejsc po przecinku?
 3,14
 3,40
 3,25
