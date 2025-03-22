@@ -1,1 +1,26 @@
-
+Oblicz granice lim(x->0) sin(x)/x.
+1
+0
+nie istnieje
+-infinity
+Wyznacz pochodna funkcji f(x)=1/x^2+1.
+-2x/(x^2+1)^2
+2x/(x^2+1)^2
+x/x^2+1
+-x/(x^2+1)^2
+Wyznacz pochodna funkcji f(x)=ln(x^2+1).
+2x/x^2+1
+e^x
+-4x/2x^2+1
+-2x/2x^2+1
+Oblicz granice lim (x->0)e^x-1/x
+1
+0
++infinity
+-infinity
+Oblicz punkt przegiecia funkcji f(x)=x^4-4x^3+6x^2-2x.
+1
+-1
+-2
+4
+  

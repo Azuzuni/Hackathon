@@ -1,1 +1,25 @@
-
+Podaj przedzialy wkleslosci i wypuklosci f(x)=1/x^2+1
+wypukla w(-infty,+infty)/0
+wklesla w(-infty,+infty)/0
+wypukla w (-infty,0), wklesla w (0,+infty)
+wklesla w (-infty,0), wypukla w (0,+infty)
+Podaj przedzialy wkleslosci i wypuklosci f(x)=x^3-3x
+wklesla w(-infty,0), wypukla w (0, +infty)
+wypukla w(-infty,0), wklesla w (0, +infty)
+wypukla w(-infty,3), wklesla w (3, +infty)
+wklesla w(-infty,-3), wypukla w (-3, +infty)
+Podaj przedzialy wkleslosci i wypuklosci f(x)=x/x^2+1
+wypukla w(-infty,0), wklesla w (0, +infty)
+wklesla w(-infty,0), wypukla w (0, +infty)
+wypukla na calym przedziale
+wklesla na calym przedziale
+Podaj przedzialy wkleslosci f(x)=3x^4-8x^3+6x^2
+(1/3,1)
+(-infty,1/3) i (1,+infty)
+(-1,-1/3)
+(-1/3,1)
+Podaj przedzialy wypuklosci f(x)=3x^4-8x^3+6x^2
+(-infty,1/3) i (1,+infty)
+(-1,-1/3)
+(-1/3,1)
+​(1/3,1)

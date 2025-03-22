@@ -1,1 +1,25 @@
-
+Funkcja 𝑓(𝑥) jest ciągła w punkcie x0, gdy:
+lim(x->x0) f(x)=f(x0)
+lim(x->infty)f(x)=lim(x0->infty)f(x0)
+funkcja jest monotoniczna 
+funkcja nie ma miejsc zerowych
+Twierdzenie o granicy ciagu monotonicznego:
+Jesli jest monotoniczny i ograniczony, to jest zbiezny.
+Jesli nie jest monotoniczny i nie ograniczony, to jest zbiezny.
+Jesli jest monotoniczny, to jest zbiezny.
+Jesli jest ograniczony, to jest zbiezny.
+Jeśli funkcje f(x) i g(x) są ciągłe w punkcie x0, to ich suma 
+jest również ciagla w tym punkcie
+nie istnieje w tym punkcie
+nie jest ciagla w tym punkcie
+nie istnieje na przedziale
+Rozwiaz rownanie 3^(2x)=81^(x+1)
+x=-2
+x=1/2
+x=2
+x=-(1/2)
+Rozwiaz rownanie 4^x=2^(3x-2)
+x=2
+x=-2
+x=1/2
+x=3/4

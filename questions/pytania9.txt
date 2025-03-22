@@ -1,1 +1,25 @@
-
+Oblicz granice ciagu an=n+3/2n^2+1.
+0
+-infinity
+jest rozbiezny
++infinity
+Oblicz granice ciagu an=n/n+3.
+1
++infinity
+-infinity
+0
+Oblicz granice ciagu an=n^3+4n/2n^3+5n.
+1/2
+1/4
+1/6
+2/5
+Podaj przedzialy wkleslosci i wypuklosci f(x)=x^2+3x-5
+wypukla na calym przedziale
+wklesla na calym przedziale
+wypukla w (-infty,0), wklesla w (0,+infty)
+wklesla w (-infty,0), wypukla w (0,+infty)
+Podaj przedzialy wkleslosci i wypuklosci f(x)=e^x
+wypukla na calym przedziale
+wklesla na calym przedziale
+wypukla w (-infty,0), wklesla w (0,+infty)
+wklesla w (-infty,0), wypukla w (0,+infty)

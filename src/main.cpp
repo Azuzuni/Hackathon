@@ -1,11 +1,11 @@
 #include "raylib/raylib-cpp.hpp"
 #include "ScreenManager.hpp"
+#include "GlobalVariables.hpp"
 
 int main() {
-    int screenWidth = 1800;
-    int screenHeight = 950;
 
-    raylib::Window window(screenWidth, screenHeight, "raylib-cpp - basic window");
+
+    raylib::Window window(hackathon::screenWidth, hackathon::screenHeight, "U mnie dziala");
     
     hackathon::ScreenManager screen(window);
 
