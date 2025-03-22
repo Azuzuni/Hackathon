@@ -3,12 +3,12 @@ Jaka jest suma wszystkich liczb od 0 do 100?
 1000
 5000
 4050
-Rzucasz dwa razy moneta. Jakie jest prawdopodobienstwo, że orzel wypadnie dwa razy?
+Rzucasz dwa razy moneta. Jakie jest prawdopodobienstwo, ze orzel wypadnie dwa razy?
 1/4
 1/2
 1/3
 3/4
-Ile mililitrow zmiesci się w 2 i 1/4 litra?
+Ile mililitrow zmiesci sie w 2 i 1/4 litra?
 2250
 2500
 3500
@@ -19,7 +19,7 @@ Podaj wynik dzialania "a-b-c", gdzie a=-2, b=-3, c=4.
 5
 3
 Oblicz (2+3) (5-6)*3+2.
--13
+17
 30
 13
 -30
