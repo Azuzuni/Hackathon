@@ -20,11 +20,12 @@ namespace hackathon
 	class RoadmapScreen : public Screen
 	{
 	public:
-		RoadmapScreen(raylib::Window& window) :
+		RoadmapScreen(raylib::Window& window, int savedProgress) :
 			Screen(window),
 			m_background(LoadTexture("../../../graphic/mapa.jpg")),
 			m_marker(LoadTexture("../../../graphic/here.png")),
-			m_done(LoadTexture("../../../graphic/Check.png"))
+			m_done(LoadTexture("../../../graphic/Check.png")),
+			m_level(savedProgress)
 		{
 			m_buttons[0] = { 130, 600, "1", "Quiz1" };
 			m_buttons[1] = { 320, 530, "2", "Quiz2" };
@@ -44,7 +45,7 @@ namespace hackathon
 		}
 		void compute() override
 		{
-			if (last.completed && last.level==m_level)
+			if (last.completed && last.level==m_level && m_level<15)
 			{
 				m_level++;
 			}
@@ -55,8 +56,8 @@ namespace hackathon
 			DrawTexture(m_background, 0, 0, WHITE);
 			for (int i =0;i<m_level;i++)
 				CreateMarker(m_buttons[i].x, m_buttons[i].y, m_done, m_buttons[i].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[i].screenSelector);
-
-			CreateMarker(m_buttons[m_level].x, m_buttons[m_level].y, m_marker, m_buttons[m_level].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[m_level].screenSelector);
+			if (m_level < 15)
+				CreateMarker(m_buttons[m_level].x, m_buttons[m_level].y, m_marker, m_buttons[m_level].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[m_level].screenSelector);
 			/*CreateMarker(130, 600, m_marker, "1", []() {S_SCREEN = "Quiz1";});
 			CreateMarker(320, 530, m_marker, "2", []() {S_SCREEN = "Quiz2";});
 			CreateMarker(450, 440, m_marker, "3", []() {S_SCREEN = "Quiz3";});
