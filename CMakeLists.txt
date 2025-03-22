@@ -40,6 +40,7 @@ set(HEADER_FILES
     ${PROJECT_SOURCE_DIR}/head/Marker.hpp
     ${PROJECT_SOURCE_DIR}/head/MainScreen.hpp
     ${PROJECT_SOURCE_DIR}/head/ScoreHandler.hpp
+    ${PROJECT_SOURCE_DIR}/head/ClearScreen.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})

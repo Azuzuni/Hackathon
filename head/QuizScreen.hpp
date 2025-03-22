@@ -21,6 +21,7 @@ namespace hackathon
 				m_buttonTexture(LoadTexture("../../../graphic/Button.png")),
                 m_questions(wczytajDane(dataFile))
 				{
+                    s_score = {m_questions.size()/5};
 				};
 			 
 			void compute() override {};
@@ -41,14 +42,13 @@ namespace hackathon
             std::vector<QuestionData> m_questions;
             std::vector<int> m_answers = RandVec(4);
             int m_pathIndex = {1};
-            ScoreHandler m_score{m_questions.size()/5};
 			
 		private:
 			inline void DrawQuestion(const int questionIndex) {
 				DrawText(m_questions[questionIndex].question.c_str(),150,110,S_fontSize,S_fontColor);
 			} 
             inline void DrawScore() {
-                DrawText(m_score.displayScore().c_str(),screenWidth-200,100,S_fontSize*2,S_fontColor);
+                DrawText(s_score.displayScore().c_str(),screenWidth-200,100,S_fontSize*2,S_fontColor);
             }
 			void DrawButton(const int x, const int y, const int questionIndex,const int answerIndex) {
 				Vector2 mousePosition = GetMousePosition();
@@ -60,15 +60,14 @@ namespace hackathon
 				else {
 					DrawTexture(m_buttonTexture,x,y,GRAY);
 					if(IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){ 
-                        if(m_questions[questionIndex].answers[0] == m_questions[questionIndex].answers[answerIndex]) m_score.incrementScore();
+                        if(m_questions[questionIndex].answers[0] == m_questions[questionIndex].answers[answerIndex]) s_score.incrementScore();
 						m_answers = RandVec(4);
 						++m_index;
 					}
 				}
 				if(m_index>=m_questions.size()/5) {
 					m_index = {0};	
-                    m_score.resetScore();
-					S_SCREEN = "Roadmap";
+					S_SCREEN = "ClearScreen";
 				};
 				
 				DrawText(m_questions[questionIndex].answers[answerIndex].c_str(),x+(m_buttonTexture.width/10),y+(m_buttonTexture.height/3),S_fontSize,S_fontColor);
