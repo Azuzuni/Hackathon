@@ -5,7 +5,7 @@
 int main() {
 
 
-    raylib::Window window(hackathon::screenWidth, hackathon::screenHeight, "STOPKARZ");
+    raylib::Window window(hackathon::screenWidth, hackathon::screenHeight, "U mnie dziala");
     
     hackathon::ScreenManager screen(window);
 
