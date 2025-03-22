@@ -8,7 +8,7 @@ x= 5/19, y= 6/5
 x=19/5, y=5/6
 x=9/14, y=-4/3
 x=-3/7, y=8/13
-Znajdz pierwiastki rownania kwadratowego 𝑥^2−5𝑥+6=0
+Znajdz pierwiastki rownania kwadratowego x^2−5x+6=0
 2 i 3
 ​1 i 7
 2 i 1
