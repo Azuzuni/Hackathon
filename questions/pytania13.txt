@@ -23,3 +23,8 @@ Pierwsze prawo de Morgana brzmi:
 (p∧q)<->~p∨~q
 ~(p∧q)<->p∨q
 (p∧q)<->p∨q
+Ktore zdanie o Janie Pawle II jest prawdziwe?
+Byl pierwszym papiezem jezdzacym na nartach
+Nie lubil bigosu
+Znal 5 jezykow obcych
+Pochodzil z Wroclawia
