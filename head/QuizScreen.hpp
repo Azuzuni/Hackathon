@@ -15,11 +15,12 @@ namespace hackathon
 	class QuizScreen : public Screen
 	{
 		public:
-			QuizScreen(raylib::Window& window, const std::string& dataFile) :
-				Screen(window), 
+			QuizScreen(raylib::Window& window, const std::string& dataFile, int currentQuestion) :
+				Screen(window),
 				m_background(LoadTexture("../../../graphic/Pytanie.jpg")),
 				m_buttonTexture(LoadTexture("../../../graphic/Button.png")),
-                m_questions(wczytajDane(dataFile))
+				m_questions(wczytajDane(dataFile)),
+				m_QUESTION(currentQuestion)
 				{
                     s_score = {m_questions.size()/5};
 				};
@@ -42,13 +43,14 @@ namespace hackathon
             std::vector<QuestionData> m_questions;
             std::vector<int> m_answers = RandVec(4);
             int m_pathIndex = {1};
+			int m_QUESTION;
 			
 		private:
 			inline void DrawQuestion(const int questionIndex) {
 				DrawText(m_questions[questionIndex].question.c_str(),150,110,S_fontSize,S_fontColor);
 			} 
             inline void DrawScore() {
-                DrawText(s_score.displayScore().c_str(),screenWidth-200,100,S_fontSize*2,S_fontColor);
+                DrawText(s_score.displayScore(m_QUESTION).c_str(),screenWidth-200,100,S_fontSize*2,S_fontColor);
             }
 			void DrawButton(const int x, const int y, const int questionIndex,const int answerIndex) {
 				Vector2 mousePosition = GetMousePosition();

@@ -44,11 +44,11 @@ namespace hackathon
 		}
 		void compute() override
 		{
-			if (completedLastQuiz)
+			if (last.completed && last.level==m_level)
 			{
-				completedLastQuiz = false;
 				m_level++;
 			}
+			last.completed = false;
 		}
 		void display() override
 		{

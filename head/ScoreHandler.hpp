@@ -11,6 +11,7 @@ namespace hackathon {
         size_t m_maxScore;
     public:
         ScoreHandler(size_t size) : m_maxScore(size){};
+        std::string displayScore(int);
         std::string displayScore();
         inline void incrementScore() {
             ++m_currentScore;
