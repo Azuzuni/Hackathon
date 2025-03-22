@@ -15,4 +15,4 @@ void hackathon::CreateMarker(const int x, const int y,Texture2D texture,const st
     
     DrawText(text.c_str(),x+(texture.width),y+(texture.height),S_fontSize,S_fontColor);
 
-}	
+}

@@ -48,7 +48,7 @@ namespace hackathon
 		{
 			DrawTexture(m_background, 0, 0, WHITE);
 			for (int i =0;i<15;i++)
-				CreateMarker(m_buttons[i].x, m_buttons[i].y, m_marker, m_buttons[i].text, [&](const std::string& screen) {S_SCREEN = screen;}, m_buttons[i].screenSelector);
+				CreateMarker(m_buttons[i].x, m_buttons[i].y, m_marker, m_buttons[i].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[i].screenSelector);
 			/*CreateMarker(130, 600, m_marker, "1", []() {S_SCREEN = "Quiz1";});
 			CreateMarker(320, 530, m_marker, "2", []() {S_SCREEN = "Quiz2";});
 			CreateMarker(450, 440, m_marker, "3", []() {S_SCREEN = "Quiz3";});
