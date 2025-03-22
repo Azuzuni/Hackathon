@@ -27,6 +27,8 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/ScreenManager.cpp
     ${PROJECT_SOURCE_DIR}/src/RoadmapScreen.cpp
     ${PROJECT_SOURCE_DIR}/src/Marker.cpp
+    ${PROJECT_SOURCE_DIR}/src/ScoreHandler.cpp
+    
 )
 
 set(HEADER_FILES

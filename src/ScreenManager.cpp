@@ -19,7 +19,7 @@ namespace hackathon
 		m_screens["ClearScreen"] = std::make_unique<ClearScreen>(window);
 	}
 
-	void ScreenManager::compute()
+	void ScreenManager::compute()              
 	{
 		processChangeRequest();
 		m_screens[m_currentScreen]->compute();
