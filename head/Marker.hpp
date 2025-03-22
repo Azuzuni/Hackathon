@@ -4,5 +4,5 @@
 
 
 namespace hackathon {
-    void CreateMarker(const int x, const int y,Texture2D texture,const std::string& text, void (*func)());
+    void CreateMarker(const int x, const int y,Texture2D texture,const std::string& text, void (*func)(const std::string&), const std::string&);
 }
