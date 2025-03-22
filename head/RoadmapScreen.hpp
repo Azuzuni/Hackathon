@@ -5,6 +5,7 @@
 #include "Marker.hpp"
 #include <iostream>
 #include <array>
+#include <GlobalVariables.hpp>
 
 namespace hackathon
 {
@@ -43,17 +44,16 @@ namespace hackathon
 		}
 		void compute() override
 		{
-
-		}
-		void display() override
-		{
 			if (completedLastQuiz)
 			{
 				completedLastQuiz = false;
 				m_level++;
 			}
+		}
+		void display() override
+		{
 			DrawTexture(m_background, 0, 0, WHITE);
-			for (int i =0;i<m_level-1;i++)
+			for (int i =0;i<m_level;i++)
 				CreateMarker(m_buttons[i].x, m_buttons[i].y, m_done, m_buttons[i].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[i].screenSelector);
 
 			CreateMarker(m_buttons[m_level].x, m_buttons[m_level].y, m_marker, m_buttons[m_level].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[m_level].screenSelector);
