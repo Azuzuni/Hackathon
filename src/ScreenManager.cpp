@@ -2,6 +2,7 @@
 #include "QuizScreen.hpp"
 #include "RoadmapScreen.hpp"
 #include "GlobalVariables.hpp"
+#include "MainScreen.hpp"
 
 namespace hackathon
 {
@@ -13,6 +14,7 @@ namespace hackathon
 			m_screens["Quiz"+std::to_string(i)] = std::make_unique<QuizScreen>(window,"../../../questions/pytania"+std::to_string(i)+".txt");
 		}
 		m_screens["Roadmap"] = std::make_unique<RoadmapScreen>(window);
+		m_screens["MainScreen"] = std::make_unique<MainScreen>(window);
 	}
 
 	void ScreenManager::compute()

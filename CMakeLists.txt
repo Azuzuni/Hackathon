@@ -38,6 +38,7 @@ set(HEADER_FILES
     ${PROJECT_SOURCE_DIR}/head/RoadmapScreen.hpp
     ${PROJECT_SOURCE_DIR}/head/GlobalVariables.hpp
     ${PROJECT_SOURCE_DIR}/head/Marker.hpp
+    ${PROJECT_SOURCE_DIR}/head/MainScreen.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
