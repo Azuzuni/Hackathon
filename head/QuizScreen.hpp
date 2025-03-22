@@ -23,7 +23,7 @@ namespace hackathon
 			void compute() override {};
 			void display() override {
 				DrawTexture(m_background,0,0,WHITE);
-
+				DrawQuestion(m_index);
 				DrawButton(70,250, m_index,0);
 				DrawButton(950,250, m_index,1);
 				DrawButton(70,630, m_index,2);
@@ -37,6 +37,9 @@ namespace hackathon
 			int m_pathIndex = {1};
 			
 		private:
+			inline void DrawQuestion(const int questionIndex) {
+				DrawText(m_questions[questionIndex].question.c_str(),150,110,S_fontSize,S_fontColor);
+			} 
 			void DrawButton(const int x, const int y, const int questionIndex,const int answerIndex) {
 				Vector2 mousePosition = GetMousePosition();
 				float width = static_cast<float>(m_buttonTexture.width);
