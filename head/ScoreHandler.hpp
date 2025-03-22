@@ -2,6 +2,7 @@
 #include "raylib/raylib-cpp.hpp"
 #include <vector>
 #include "WczytywanieDanych.hpp"
+#include "GlobalVariables.hpp"
 
 namespace hackathon {
     class ScoreHandler
@@ -11,7 +12,9 @@ namespace hackathon {
         size_t m_maxScore;
     public:
         ScoreHandler(size_t size) : m_maxScore(size){};
-        std::string displayScore() {
+        std::string displayScore() const {
+            if (m_currentScore == m_maxScore)
+                completedLastQuiz = true;
             return std::to_string(m_currentScore)+'/'+std::to_string(m_maxScore);
         }
         inline void incrementScore() {

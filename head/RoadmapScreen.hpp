@@ -22,7 +22,8 @@ namespace hackathon
 		RoadmapScreen(raylib::Window& window) :
 			Screen(window),
 			m_background(LoadTexture("../../../graphic/mapa.jpg")),
-			m_marker(LoadTexture("../../../graphic/here.png"))
+			m_marker(LoadTexture("../../../graphic/here.png")),
+			m_done(LoadTexture("../../../graphic/Check.png"))
 		{
 			m_buttons[0] = { 130, 600, "1", "Quiz1" };
 			m_buttons[1] = { 320, 530, "2", "Quiz2" };
@@ -46,9 +47,16 @@ namespace hackathon
 		}
 		void display() override
 		{
+			if (completedLastQuiz)
+			{
+				completedLastQuiz = false;
+				m_level++;
+			}
 			DrawTexture(m_background, 0, 0, WHITE);
-			for (int i =0;i<15;i++)
-				CreateMarker(m_buttons[i].x, m_buttons[i].y, m_marker, m_buttons[i].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[i].screenSelector);
+			for (int i =0;i<m_level-1;i++)
+				CreateMarker(m_buttons[i].x, m_buttons[i].y, m_done, m_buttons[i].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[i].screenSelector);
+
+			CreateMarker(m_buttons[m_level].x, m_buttons[m_level].y, m_marker, m_buttons[m_level].text, [](const std::string& screen) {S_SCREEN = screen;}, m_buttons[m_level].screenSelector);
 			/*CreateMarker(130, 600, m_marker, "1", []() {S_SCREEN = "Quiz1";});
 			CreateMarker(320, 530, m_marker, "2", []() {S_SCREEN = "Quiz2";});
 			CreateMarker(450, 440, m_marker, "3", []() {S_SCREEN = "Quiz3";});
@@ -67,8 +75,10 @@ namespace hackathon
 		}
 	private:
 		Texture2D m_marker;
+		Texture2D m_done;
 		raylib::Texture2D m_background;
 		std::vector <raylib::Texture2D> m_icons;
 		std::array<ButtonInfo, 15> m_buttons;
+		int m_level = 0;
 	};
 }
